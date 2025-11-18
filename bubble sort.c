@@ -15,15 +15,19 @@ int main()
 		{
 			if(a[j]>a[j+1])
 			{
-				temp=a[i];
-				a[i]=a[j];
-				a[j]=temp;
+				temp=a[j];
+				a[j]=a[j+1];
+				a[j+1]=temp;
 			}
+		}
+	}
 			printf("\n sorted array is");
 			for(i=0;i<n;i++)
 			{
 				printf("%d",a[i]);
 			}
+			return 0;
 		}
 	}
 }
+
